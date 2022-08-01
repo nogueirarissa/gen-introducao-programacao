@@ -3,15 +3,42 @@ programa
 	
 	funcao inicio()
 	{
-		escreva("Olá Mundo")
+		inteiro num
+		escreva("\nDigite um número qualquer: ")
+		leia(num)
+		
+		se(num % 2 == 0)
+		{
+			se (num>=0)
+			{
+				escreva("\nEste número é par e positivo")
+			}
+			senao
+			{
+				escreva("\nEste número é par e negativo")
+			}
+		}
+		
+		senao
+		{ 
+			se(num<=0)
+			{
+				escreva("\nEste número é ímpar e negativo")
+			}
+			senao 	
+			{
+				escreva("\nEste número é ímpar e positivo")
+			}
+		}	
 	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 12; 
+ * @POSICAO-CURSOR = 294; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
